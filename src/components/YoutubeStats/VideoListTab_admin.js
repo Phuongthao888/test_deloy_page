@@ -21,7 +21,7 @@ export default function VideoListTab({
       {savedVideos.length === 0 ? (
         <div className="text-center py-12 text-gray-400">
           <p className="text-lg">Chưa có video nào được lưu</p>
-          <p className="mt-2">Hãy thêm video mới từ tab "Thêm Video Mới"</p>
+          <p className="mt-2">Hãy thêm video mới từ tab Thêm Video Mới</p>
         </div>
       ) : (
         <>

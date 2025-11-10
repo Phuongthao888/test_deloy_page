@@ -262,7 +262,7 @@ export default function SpotifyStreamInput({ tracks, onStreamDataSaved }) {
             Số liệu ngày {yesterdayStreams.date}: {yesterdayStreams.daily_streams?.toLocaleString()} streams
           </p>
           <p className="text-xs text-blue-400 mt-1">
-            Hệ thống tự động tính "Tăng/Giảm" so với ngày {yesterdayStreams.date}
+            Hệ thống tự động tính Tăng/Giảm so với ngày {yesterdayStreams.date}
           </p>
         </motion.div>
       )}
@@ -277,7 +277,7 @@ export default function SpotifyStreamInput({ tracks, onStreamDataSaved }) {
             Không tìm thấy số liệu cho ngày hôm trước
           </p>
           <p className="text-xs text-yellow-400 mt-1">
-            Bạn có thể nhập thủ công giá trị "Tăng/Giảm"
+            Bạn có thể nhập thủ công giá trị Tăng/Giảm
           </p>
         </motion.div>
       )}
@@ -402,7 +402,7 @@ export default function SpotifyStreamInput({ tracks, onStreamDataSaved }) {
       <div className="mt-4 text-sm text-gray-400 text-center">
         <p>Định dạng số: sử dụng dấu chấm phân cách hàng nghìn (1.534.185)</p>
         <p>Chỉ bắt buộc nhập Ngày và Tổng streams</p>
-        <p className="text-green-400">Hệ thống tự động tính "Tăng/Giảm" dựa trên ngày bạn nhập</p>
+        <p className="text-green-400">Hệ thống tự động tính Tăng/Giảm dựa trên ngày bạn nhập</p>
       </div>
     </div>
   );

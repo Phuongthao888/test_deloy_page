@@ -24,7 +24,7 @@ export default function SpotifyTrackList({
       {savedTracks.length === 0 ? (
         <div className="text-center py-12 text-gray-400">
           <p className="text-lg">Chưa có track nào được lưu</p>
-          <p className="mt-2">Hãy thêm track mới từ tab "Thêm Track Mới"</p>
+          <p className="mt-2">Hãy thêm track mới từ tab Thêm Track Mới</p>
         </div>
       ) : (
         <>
