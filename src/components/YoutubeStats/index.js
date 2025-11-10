@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Header from './Header';
 import TabNavigation from './TabNavigation';
@@ -27,18 +27,17 @@ export default function YoutubeStats() {
   const [updateCount, setUpdateCount] = useState(0);
   const [serverHealth, setServerHealth] = useState('unknown');
 
-  // Sử dụng useCallback để memoize hàm
-  const initializeApp = useCallback(async () => {
-    await checkServerHealth();
-    await loadSavedVideos();
-  }, []); // ← Thêm dependencies nếu hàm sử dụng state/props khác
-
   // Load saved videos khi component mount
   useEffect(() => {
     console.log('Component mounted');
     console.log('API Base URL:', API_BASE);
     initializeApp();
-  }, [initializeApp]); // ← Thêm initializeApp vào dependencies
+  }, []);
+
+  const initializeApp = async () => {
+    await checkServerHealth();
+    await loadSavedVideos();
+  };
 
   const checkServerHealth = async () => {
     try {
