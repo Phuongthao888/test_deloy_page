@@ -28,7 +28,7 @@ export default function YoutubeStats() {
     console.log('Component mounted');
     console.log('API Base URL:', API_BASE);
     initializeApp();
-  }, [initializeApp]); // ← Thêm vào đây
+  }, []);
 
   const initializeApp = async () => {
     await checkServerHealth();
